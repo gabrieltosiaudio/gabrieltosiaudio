@@ -1,11 +1,146 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Gabriel Tosi Audio</title>
-  </head>
-  <body>
-    <h1>Site funcionando!</h1>
-    <p>Bem-vindo ao meu GitHub Pages :)</p>
-  </body>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gabriel Tosi — Sound Designer & Composer</title>
+  <!-- Tailwind Play CDN (quick) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Small custom styles */
+    .bg-gradient-primary {
+      background: linear-gradient(90deg,#7c3aed,#06b6d4);
+    }
+    .glow { box-shadow: 0 6px 20px rgba(124,58,237,0.18); }
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-background text-foreground">
+  <!-- Navigation -->
+  <header class="fixed w-full z-30 bg-white/60 backdrop-blur border-b">
+    <div class="container mx-auto px-6 flex items-center justify-between h-16">
+      <div class="text-xl font-bold">GABRIEL TOSI</div>
+      <nav class="hidden md:flex gap-6">
+        <a href="#work" class="hover:underline">Work</a>
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#services" class="hover:underline">Services</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+      <button id="mobileBtn" class="md:hidden px-3 py-2 border rounded">Menu</button>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden border-t bg-white/95">
+      <div class="px-6 py-4 flex flex-col gap-3">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main class="pt-20">
+    <section id="hero" class="min-h-screen flex items-center justify-center">
+      <div class="container mx-auto px-6 text-center">
+        <h1 class="text-5xl md:text-7xl font-serif font-bold mb-4">GABRIEL TOSI</h1>
+        <p class="text-2xl md:text-3xl text-muted-foreground">SOUND DESIGNER AND COMPOSER</p>
+        <div class="mt-8 flex justify-center gap-4">
+          <a href="#work" class="px-6 py-3 rounded bg-gradient-primary text-white glow">Veja meu trabalho</a>
+          <a href="#contact" class="px-6 py-3 rounded border">Entrar em contato</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section id="work" class="py-24">
+      <div class="container mx-auto px-6 max-w-5xl">
+        <h2 class="text-4xl font-serif font-bold mb-4">Featured Work</h2>
+        <div class="w-20 h-1 bg-gradient-primary rounded-full mb-8"></div>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="p-6 border rounded">
+            <h3 class="font-semibold text-xl">Cinematic Trailer</h3>
+            <p class="text-sm text-muted-foreground">Sound Design & Composition</p>
+            <p class="mt-2">Epic orchestral score with immersive sound design for action-adventure game trailer.</p>
+          </div>
+          <div class="p-6 border rounded">
+            <h3 class="font-semibold text-xl">Documentary Series</h3>
+            <p class="text-sm text-muted-foreground">Foley & Mixing</p>
+            <p class="mt-2">Authentic environmental sounds and foley work for nature documentary series.</p>
+          </div>
+          <div class="p-6 border rounded">
+            <h3 class="font-semibold text-xl">Short Film</h3>
+            <p class="text-sm text-muted-foreground">Original Score</p>
+            <p class="mt-2">Emotional piano-driven composition for award-winning independent short film.</p>
+          </div>
+          <div class="p-6 border rounded">
+            <h3 class="font-semibold text-xl">Podcast Intro</h3>
+            <p class="text-sm text-muted-foreground">Sound Design</p>
+            <p class="mt-2">Branded audio identity with custom sound effects and musical elements.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-24 bg-white/50">
+      <div class="container mx-auto px-6 max-w-4xl">
+        <h2 class="text-4xl font-serif font-bold mb-4">About</h2>
+        <div class="w-20 h-1 bg-gradient-primary rounded-full mb-6"></div>
+        <div class="space-y-4 text-lg text-foreground/80 leading-relaxed">
+          <p>As a dedicated sound designer, composer, and foley artist, I bring stories to life through carefully crafted audio experiences. With a keen ear for detail and a passion for sonic storytelling, I specialize in creating immersive soundscapes that elevate visual media.</p>
+          <p>My work spans across film, television, games, and digital media, where I combine technical expertise with creative vision to deliver professional-grade audio that resonates with audiences. From subtle ambient textures to dynamic sound effects and original compositions, I approach each project with dedication and precision.</p>
+          <p class="text-primary font-medium">Currently seeking remote opportunities to collaborate on exciting projects worldwide.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-24">
+      <div class="container mx-auto px-6 max-w-4xl">
+        <h2 class="text-4xl font-serif font-bold mb-4">Services</h2>
+        <div class="w-20 h-1 bg-gradient-primary rounded-full mb-6"></div>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="p-6 border rounded">
+            <h3 class="font-semibold text-xl">Sound Design</h3>
+            <p class="mt-2">Creating unique audio textures and effects that enhance the narrative and emotional impact of your project.</p>
+          </div>
+          <div class="p-6 border rounded">
+            <h3 class="font-semibold text-xl">Composition</h3>
+            <p class="mt-2">Original musical scores tailored to your vision, from cinematic orchestrations to atmospheric soundtracks.</p>
+          </div>
+          <div class="p-6 border rounded">
+            <h3 class="font-semibold text-xl">Foley Artistry</h3>
+            <p class="mt-2">Authentic, synchronized sound effects that bring realism and depth to every movement and action on screen.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-24 bg-secondary/10">
+      <div class="container mx-auto px-6 max-w-3xl text-center">
+        <h2 class="text-4xl font-serif font-bold mb-4">Let's Collaborate</h2>
+        <div class="w-20 h-1 bg-gradient-primary rounded-full mx-auto mb-6"></div>
+        <p class="text-xl text-foreground/80 mb-6">Available for remote projects worldwide. Let's create something extraordinary together.</p>
+        <div class="flex justify-center gap-4 mb-4">
+          <a class="px-6 py-3 rounded bg-primary text-white" href="mailto:your.email@example.com">Get in Touch</a>
+          <a class="px-6 py-3 rounded border" href="#contact">More info</a>
+        </div>
+        <div class="flex justify-center gap-4 mt-4 text-muted-foreground">
+          <a href="#" aria-label="Twitter">Twitter</a>
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-8 border-t text-center text-sm">
+    <div class="container mx-auto px-6">
+      <p>© 2025 Sound Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
 </html>
